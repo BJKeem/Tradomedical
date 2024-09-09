@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NumeroTradoMedical</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    #navbarNav{
+      padding: 0px 50px;
+      /* display: flex; */
+      align-items: center;
+      justify-content: space-between;
+    }
+    .navbar-brand{
+      font-size: 25px;
+      color: green;
+    }
+    #navbarNav ul li a{
+      text-decoration: none;
+      font-size: 25px;
+      color: green;
+    }
+    #navbarNav ul li a:hover{
+      color: #21ffec;
+    }
+    .hero-section {
+      background: url(images/hero.jpg) no-repeat center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      height: 100vh;
+      width: auto;
+      color: green;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 100px; /* Adjust to ensure navbar doesn't overlap */
+    }
+
+     /* Media Query for Mobile Devices */
+  @media (max-width: 768px) {
+    .hero-section {
+      background-position: center;
+      background-size: contain; /* Ensures the whole image is shown */
+      height: 80vh; /* Adjust height for smaller screens */
+      padding-top: 80px; /* Adjust top padding for smaller screens */
+    }
+
+    .hero-overlay {
+      padding: 15px;
+    }
+
+    h1 {
+      font-size: 1.8rem; /* Adjust font size for mobile */
+    }
+
+    p {
+      font-size: 1rem; /* Adjust font size for mobile */
+    }
+
+    .btn {
+      font-size: 0.9rem;
+    }
+  }
+    .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .btn{
+      background-color: green;
+      border-color: black;
+    }
+    .about-section, .services-section {
+      padding: 60px 0;
+    }
+    .service-card img {
+      border-radius: 10px;
+    }
+    footer {
+      background-color: green;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .linked{
+        text-decoration: none;
+        color: aliceblue;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sticky Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">NUMERO TRADOMEDICAL CENTRE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-overlay">
+      <h1>Welcome to NUMERO TRADOMEDICAL CENTRE</h1>
+      <p>Your trusted partner in traditional medicine and healing practices.</p>
+      <a href="#services" class="btn btn-primary mt-3">Explore Our Services</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>About Us</h2>
+          <p>NUMERO TRADOMEDICAL CENTRE has been providing natural and traditional healthcare solutions for over 20 years. Our experienced practitioners blend ancient wisdom with modern techniques to offer holistic healing. Our herbal products are internationaly recognized and provides remedies to patient with purely natural herbal suppplements with guarantees. Using the principles of phytotherapy, we harness the natural healing power of plants, much like the traditional African healers who understood the profound impact of nature on health and well-being, our treatments are designed to support your holistic wellness journey. Rooted in the time-honored practices of our ancestors Our practice is deeply rooted in the traditional knowledge that our ancestors used to connect with nature and the spirit world, we utilize a variety of native plants and herbs known for their potent healing properties. From reading the symbols of nature to communicating with the spirit realm, we offer insights and guidance that help you navigate life's challenges and uncover your destiny. Through these interconnected practices, we bring ancient African wisdom into the modern world, offering you a holistic path to health and spiritual fulfillment.</p>
+        </div>
+        <div class="col-lg-6">
+          <img src="images/NUm.webp" alt="About Us" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2 class="text-center" style="color: green;">Our Services</h2>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card service-card">
+            <img src="images/herbal medicine1.jpg" class="card-img-top" alt="Herbal Medicine">
+            <div class="card-body">
+              <h5 class="card-title">Herbal Medicine</h5>
+              <p class="card-text">We offer a wide range of herbal remedies tailored to individual health needs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card service-card">
+            <img src="images/Psychic.jpg" class="card-img-top" alt="Psychic">
+            <div class="card-body">
+              <h5 class="card-title">Psychic Reading</h5>
+              <p class="card-text">We also specialize in psychic services, offering insights and guidance through various spiritual practices. Whether you're seeking answers, clarity, or connection to the metaphysical world, our experienced psychics are here to help you navigate life's challenges and uncover your true path.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card service-card">
+            <img src="images/phytotherapy.jpeg" class="card-img-top" alt="Phytotherapy">
+            <div class="card-body">
+              <h5 class="card-title">Phytotherapy</h5>
+              <p class="card-text">One of our core specialties is **phytotherapy**, the practice of using plant-based remedies to treat and prevent various health conditions. Our experts craft personalized treatments using natural herbs and extracts, leveraging the healing power of plants to support your wellness journey. Phytotherapy is a safe and effective way to address many ailments, offering a gentle yet powerful alternative to conventional medicine.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container">
+      <p>Contact us at: <a class="linked" href="mailto:numeroherbalremedies@gmail.com">numeroherbalremedies@gmail.com</a></p>
+      <p>Phone Number: <a class="linked" href="https://wa.me/2349115138083">+1(781) 327-5783</a></p>
+      <p>&copy; 2024 NumeroTradoMedical. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (with Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
